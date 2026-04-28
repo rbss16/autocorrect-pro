@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time NLP Autocorrect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>NLP Autocorrect</h1>
+        <p class="subtitle">Type below. Corrections appear in real-time.</p>
+
+        <div class="editor-wrapper">
+            <textarea id="text-input"
+                placeholder="Start typing here... Try spelling a word incorectly (e.g. speling)."></textarea>
+            <div id="suggestion-box" class="suggestion-box"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

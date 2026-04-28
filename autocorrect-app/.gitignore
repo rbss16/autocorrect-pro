@@ -1,0 +1,12 @@
+# Ignore virtual environment
+venv/
+env/
+__pycache__/
+
+# Ignore training datasets (these will be downloaded automatically on the server)
+dictionary.txt
+en_50k.txt
+corpus.txt
+
+# Ignore the compiled model (the server will compile its own model)
+model.pkl
